@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
+
+    <string name="app_name">MyImageWatchFace</string>
+    <string name="take_photo">Select Image</string>
+    <string name="send_photo">Send Image</string>
+    <string name="send_success">Send</string>
+    <string name="UnitID">ca-app-pub-6950233329598005/3654110975</string>
+
+</resources>

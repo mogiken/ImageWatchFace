@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/take_photo"
+            android:id="@+id/takePhoto"
+            android:onClick="onTakePhotoClick"
+            android:layout_marginLeft="39dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send_photo"
+            android:id="@+id/sendPhoto"
+            android:onClick="onSendPhotoClick"
+            android:layout_marginRight="39dp"
+            android:layout_toRightOf="@+id/takePhoto"
+            />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/Divider"
+        android:id="@+id/divider"
+        android:layout_below="@+id/top"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+
+
+    <ImageView
+        android:layout_below="@+id/divider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="10dp"
+        />
+    <WebView
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/imageView"
+        android:id="@+id/webView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.gms.ads.AdView
+        android:layout_below="@+id/webView"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-6950233329598005/9168934177"
+
+        />
+</RelativeLayout>

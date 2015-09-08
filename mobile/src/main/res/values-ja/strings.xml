@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="take_photo">画像を選ぶ</string>
+    <string name="send_photo">画像を送信</string>
+    <string name="send_success">送信しました</string>
+
+
+</resources>
